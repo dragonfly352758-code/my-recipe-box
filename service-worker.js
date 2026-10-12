@@ -1,5 +1,5 @@
 // My Recipe Box offline shell. Never intercept Supabase requests.
-const CACHE = 'my-recipe-box-reviewed-accuracy-v2';
+const CACHE = 'my-recipe-box-interactive-review-v3';
 const SHELL = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(SHELL)).then(() => self.skipWaiting()));
